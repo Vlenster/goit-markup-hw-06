@@ -42,7 +42,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red
+  /* outline: 2px solid red */
 }
 /* HEADER */
 .header {
@@ -436,6 +436,10 @@ height: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.footer-info{
+  flex-grow: 1;
+}
 .footer-addres {
   font-weight: 400;
   font-size: 14px;
@@ -738,7 +742,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 300ms;
-    padding: 40px 39px 50px 39px;
+    padding: 40px 39px 40px 39px;
   }
   .btn-modal-close{
     position: absolute;
@@ -755,6 +759,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 .btn-modal-close:hover,
 .btn-modal-close:focus{
   fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
   .is-hidden{
@@ -774,12 +779,16 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     letter-spacing: 0.03em;
     
     color: #212121;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
   }
 
   .form-field{
     margin-bottom: 10px;
   }
+  .textarea-field{
+    margin-bottom: 20px;;
+  }
+
 
   .modal-input{
     width: 100%;
@@ -791,7 +800,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     background-color: transparent;
     padding-left: 32px;
     color: #212121;
-
+    
   }
 
   .modal-input:focus{
@@ -854,6 +863,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     width: 200px;
     height: 50px;
 
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     text-align: center;
@@ -867,7 +877,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    margin-top: 20px;
+    margin-top: 30px;
 
   }
   .modal-btn:hover,
@@ -875,7 +885,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background: #188CE8;
-      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .input-text{
     display: block;
@@ -889,6 +900,10 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     color: #757575;
   }
 
+  .checkbox-field {
+    padding-left: ;
+  }
+
   .modal-check-label{
   font-weight: 400;
   font-size: 14px;
@@ -897,7 +912,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
   color: #757575;
   display: flex;
   align-items: center;
-  
+  margin-left: 12px;
   }
   .agreement{
     color: #2196f3;
